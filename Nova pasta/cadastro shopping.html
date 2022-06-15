@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>shopping cidade</title>
+    </head>
+        <style>
+            .cadShopping h1 {
+                color: floralwhite;
+                text-transform: uppercase;
+                border-bottom: 3px solid;
+                width: 28%;
+            }
+            body {
+                background: #02192e;
+                    
+            }
+            form {
+
+            display: grid;
+            width: 50%;
+            }
+            form p {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: inherit;
+            margin-bottom: 1.5em;
+            }
+            .logo {
+            margin-top: 8%;
+            }
+            .logo img {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+            }
+            
+        </style>
+        
+        <body>
+           
+            <div class="cadShopping">
+                <h1>cadastro de shopping</h1>
+
+                <form method="post" action="tcc.html">
+
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="text" id="cnpj" placeholder="CNPJ">
+                    <input type="number" id="telefone" placeholder="Contato">
+                    <input type="text" id="endereco" placeholder="Endereço">
+                    <input type="text" id="cidade" placeholder="Cidade">
+                    <input type="text" id="estado" placeholder="Estado">
+                    <input type="button" id="consultar" value="Consultar">
+                    <input type="button" id="cadastrar" value="Cadastrar">
+
+                </form>
+                
+            </div>
+            
+            <div class="logo">
+
+                <img src="logo.png"/>
+    
+            </div>
+         
+        </body>
+</html>

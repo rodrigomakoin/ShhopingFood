@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+body {
+    background: #02192e;
+}
+
+form {
+    display: grid;
+    width: 100%;
+}
+form p {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: inherit;
+    margin-bottom: 1.5em;
+}
+input {
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #0000002e;
+    margin: 0;
+    margin-bottom: 10px;
+}
+input#checkbox {
+    width: 15px;
+    height: inherit;
+}
+.login {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    border: 1px solid;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 25%;
+    background: #fff;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+input#usuario, input#senha {
+    padding-left: 10px;
+    font-size: 18px;
+}
+.contLogin {
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo {
+    margin-top: 8%;
+}
+.logo img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+input#botao {
+    background: #ffaf00;
+    cursor:pointer;
+    color:#fff;
+    font-weight: 900;
+    font-size: 15px;
+}
+input#botao:hover {
+    background: #b37e09;
+}
+.contfooter {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+}
+.prefooter {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    position: absolute;
+    bottom: 50px;
+}
+
+</style>
+<body>
+
+    <div class="contLogin">
+
+        <div class="login">
+
+            <form method="post" action="login.php">
+                <p>Acesse seu admin</p>
+                <input type="text" id="usuario" placeholder="Login" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <input type="button" id="botao" value="ENTRAR" required>
+                
+            </form>
+
+            <input type="checkbox" id="checkbox"> Lembrar meu login
+            <br>
+            <br>
+            <a href=""><u>RECUPERAR SENHA</u></a>
+
+        </div>
+
+        <div class="logo">
+
+            <img src="logo.png"/>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="contfooter">
+
+        <div class="prefooter">
+            ©2022 Desenvolvido por alunos Matheus Parreira, Rodrigo Makoin e Romulo Jensen
+        </div>
+
+    </div>
+
+
+
+    
+    
+</body>
+</html>

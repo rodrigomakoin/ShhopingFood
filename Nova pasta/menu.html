@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingFood</title>
+</head>
+
+<style>
+
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 20px 5px;
+        margin-left: 12px;
+    }
+    ul{
+        top: 70px;
+        position: absolute;
+        width: 100%;
+    }
+    a:hover{
+        background-color: rgb(176,224,230);
+        color: black;
+
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    ul{
+        list-style: none;
+        cursor:pointer;
+    }
+    img{
+        width: 40px;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    nav{
+        background: rgba(16,16,16,.5);
+        width: 350px;
+        left: -350px;
+        height: 100vh;
+        position: absolute;
+        transition: all .5s ;
+    }
+    label{
+        padding: 15px;
+        position: absolute;
+        z-index: 1;
+    }
+    input[type="checkbox"]:checked ~ nav{
+        transform: translateX(350px);
+    }
+    .logo img {
+        width: 56%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        z-index: -999999;
+        opacity: 0.3;
+    }
+    nav {
+        background: rgba(16,16,16,.5);
+        width: 350px;
+        left: -350px;
+        height: 100vh;
+        position: absolute;
+        transition: all .5s;
+        border-radius: 0px 34px 34px 0px;
+    }
+    form {
+        max-width: 500px;
+        width: 500px;
+        margin: 0 auto;
+        display: grid;
+    }
+
+</style>
+
+
+<body>
+
+    <input type="checkbox" id="check">
+
+        <label for="check">
+            <img src="C:\Users\rodri\OneDrive\Área de Trabalho\Nova pasta\icone.png">
+        </label>
+        
+    <nav>
+        <ul>
+            <li><a href="">Pedidos</a></li>
+            <li><a href="C:/Users/rodri/OneDrive/Área%20de%20Trabalho/Nova%20pasta/cardapio.html">Cardápio</a></li>
+            <li><a href="">Relatórios</a></li>
+            <li><a href="">Promoções</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <img src="C:\Users\rodri\OneDrive\Área de Trabalho\Nova pasta\logo.png">
+    </div>
+ 
+</body>
+</html>
